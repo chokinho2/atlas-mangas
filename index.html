@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ATLAS DOS MANGÁS — O Guia Visual Definitivo do Universo Otaku</title>
 <meta name="description" content="O guia visual definitivo do mundo dos mangás: gêneros, arcos lendários, personagens, mangakás e comparações. Acesso imediato e 100% digital." />
-<link rel="preload" as="image" href="assets/capa.webp" imagesrcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" imagesizes="(max-width:520px) 92vw, 420px" fetchpriority="high" />
+<link rel="preload" as="image" href="assets/capa.webp" imagesrcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" imagesizes="(max-width:560px) 320px, 420px" fetchpriority="high" />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-400.woff2" crossorigin />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-400.woff2" crossorigin />
 <style>
@@ -18,6 +18,10 @@
   @font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/inter-700.woff2) format('woff2')}
   @font-face{font-family:'Inter';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/inter-800.woff2) format('woff2')}
   @font-face{font-family:'Noto Sans JP';font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/notosansjp-sub.woff2) format('woff2')}
+  /* Fallbacks com métricas ajustadas (Arial) -> swap sem layout shift */
+  @font-face{font-family:'anton-fb';src:local('Arial');size-adjust:93.0%;ascent-override:126.5%;descent-override:35.4%;line-gap-override:0.0%}
+  @font-face{font-family:'bebasneue-fb';src:local('Arial');size-adjust:79.5%;ascent-override:113.2%;descent-override:37.7%;line-gap-override:0.0%}
+  @font-face{font-family:'inter-fb';src:local('Arial');size-adjust:109.6%;ascent-override:88.4%;descent-override:22.0%;line-gap-override:0.0%}
   :root{
     --black:#0d0d0f;
     --ink:#141418;
@@ -33,7 +37,7 @@
   html{scroll-behavior:smooth}
   html{overflow-x:clip}
   body{
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:'Inter','inter-fb',system-ui,sans-serif;
     background:var(--black);
     color:var(--paper);
     overflow-x:clip;
@@ -58,12 +62,12 @@
   .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
   section{position:relative}
 
-  h1,h2,h3,.impact{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.02;text-transform:uppercase}
+  h1,h2,h3,.impact{font-family:'Anton','anton-fb',sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.02;text-transform:uppercase}
   .bangers{font-family:'Bangers',cursive;letter-spacing:1.5px}
   .jp{font-family:'Noto Sans JP',sans-serif}
 
   .kicker{
-    display:inline-block;font-family:'Bebas Neue',sans-serif;letter-spacing:3px;
+    display:inline-block;font-family:'Bebas Neue','bebasneue-fb',sans-serif;letter-spacing:3px;
     background:var(--red);color:#fff;padding:6px 16px;font-size:15px;
     transform:skewX(-8deg);box-shadow:4px 4px 0 #000;border:2px solid #000;
   }
@@ -71,7 +75,7 @@
 
   /* ---------- Buttons ---------- */
   .btn{
-    display:inline-block;font-family:'Anton',sans-serif;font-size:clamp(18px,2.4vw,26px);
+    display:inline-block;font-family:'Anton','anton-fb',sans-serif;font-size:clamp(18px,2.4vw,26px);
     letter-spacing:1px;text-transform:uppercase;color:#111;background:var(--yellow);
     padding:18px 34px;border:3px solid #000;box-shadow:7px 7px 0 #000;
     transform:skewX(-6deg);transition:.12s ease;cursor:pointer;text-align:center;
@@ -85,7 +89,7 @@
   /* ---------- Top banner ---------- */
   .topbar{
     background:var(--red-deep);text-align:center;padding:9px 12px;
-    font-family:'Bebas Neue',sans-serif;letter-spacing:2px;font-size:15px;
+    font-family:'Bebas Neue','bebasneue-fb',sans-serif;letter-spacing:2px;font-size:15px;
     border-bottom:3px solid #000;color:#fff;position:relative;z-index:5;
   }
   .topbar b{color:var(--yellow)}
@@ -333,6 +337,7 @@
     .car-nav{display:none}
     .book{flex:0 0 80%}
     .deliver-check{grid-template-columns:1fr}
+    .hero-cover{max-width:320px}
   }
 </style>
 </head>
@@ -357,7 +362,7 @@
       <div style="position:relative">
         <div class="onomatopoeia" style="top:-26px;right:6px;transform:rotate(-8deg);z-index:4">ドン!</div>
         <div class="hero-cover">
-          <img src="assets/capa.webp" srcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" sizes="(max-width:520px) 92vw, 420px" width="840" height="1260" fetchpriority="high" decoding="async" alt="Capa do Atlas dos Mangás — três personagens otaku observando a Terra a partir da Lua" />
+          <img src="assets/capa.webp" srcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" sizes="(max-width:560px) 320px, 420px" width="840" height="1260" fetchpriority="high" decoding="async" alt="Capa do Atlas dos Mangás — três personagens otaku observando a Terra a partir da Lua" />
         </div>
         <div class="onomatopoeia" style="bottom:-28px;left:-6px;transform:rotate(6deg);color:#fff">バン</div>
       </div>
