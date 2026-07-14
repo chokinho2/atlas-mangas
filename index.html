@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ATLAS DOS MANGÁS — O Guia Visual Definitivo do Universo Otaku</title>
 <meta name="description" content="O guia visual definitivo do mundo dos mangás: gêneros, arcos lendários, personagens, mangakás e comparações. Acesso imediato e 100% digital." />
-<link rel="preload" as="image" href="assets/capa.webp" imagesrcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" imagesizes="(max-width:560px) 320px, 420px" fetchpriority="high" />
+<link rel="preload" as="image" href="assets/capa.webp" imagesrcset="assets/capa-480.webp 480w, assets/capa-560.webp 560w, assets/capa-640.webp 640w, assets/capa.webp 840w" imagesizes="(max-width:560px) 320px, 420px" fetchpriority="high" />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-400.woff2" crossorigin />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-400.woff2" crossorigin />
 <style>
@@ -340,6 +340,27 @@
     .hero-cover{max-width:320px}
   }
 </style>
+<!-- Meta Pixel Code (carregamento adiado p/ não competir com o LCP) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+var load=function(){if(f.__fbqLoaded)return;f.__fbqLoaded=1;
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)};
+// carrega o fbevents.js só depois do load da página (ou no 1º gesto do usuário)
+if(b.readyState==='complete')setTimeout(load,1200);
+else f.addEventListener('load',function(){setTimeout(load,1200)});
+['pointerdown','keydown','touchstart'].forEach(function(ev){
+f.addEventListener(ev,load,{once:true,passive:true})});
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '893738209866682');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=893738209866682&ev=PageView&noscript=1"
+alt="" /></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -362,7 +383,7 @@
       <div style="position:relative">
         <div class="onomatopoeia" style="top:-26px;right:6px;transform:rotate(-8deg);z-index:4">ドン!</div>
         <div class="hero-cover">
-          <img src="assets/capa.webp" srcset="assets/capa-480.webp 480w, assets/capa-640.webp 640w, assets/capa.webp 840w" sizes="(max-width:560px) 320px, 420px" width="840" height="1260" fetchpriority="high" decoding="async" alt="Capa do Atlas dos Mangás — três personagens otaku observando a Terra a partir da Lua" />
+          <img src="assets/capa.webp" srcset="assets/capa-480.webp 480w, assets/capa-560.webp 560w, assets/capa-640.webp 640w, assets/capa.webp 840w" sizes="(max-width:560px) 320px, 420px" width="840" height="1260" fetchpriority="high" decoding="async" alt="Capa do Atlas dos Mangás — três personagens otaku observando a Terra a partir da Lua" />
         </div>
         <div class="onomatopoeia" style="bottom:-28px;left:-6px;transform:rotate(6deg);color:#fff">バン</div>
       </div>
@@ -594,7 +615,7 @@
             <li>Acesso imediato e vitalício</li>
             <li>Garantia de 7 dias</li>
           </ul>
-          <a href="https://pay.wiapy.com/6a553c87e8eb6a6503d4f852" class="btn btn-full"><span>QUERO O BÁSICO</span></a>
+          <a href="https://pay.wiapy.com/6a553c87e8eb6a6503d4f852" onclick="fbq('track','InitiateCheckout',{value:17.90,currency:'BRL',content_name:'Plano Básico'});" class="btn btn-full"><span>QUERO O BÁSICO</span></a>
         </div>
 
         <div class="plan pop">
@@ -610,7 +631,7 @@
             <li>+ Bônus #3: 400 Imagens Mangá do Começo ao Fim</li>
             <li>Acesso imediato e vitalício + garantia de 7 dias</li>
           </ul>
-          <a href="https://pay.wiapy.com/6a553e031e2242d2cc74828e" class="btn btn-red btn-full"><span>QUERO O COMPLETO ▸</span></a>
+          <a href="https://pay.wiapy.com/6a553e031e2242d2cc74828e" onclick="fbq('track','InitiateCheckout',{value:27.90,currency:'BRL',content_name:'Plano Completo'});" class="btn btn-red btn-full"><span>QUERO O COMPLETO ▸</span></a>
           <p style="text-align:center;margin-top:12px;font-size:13px;color:#b9b5ab">Leve mais e pague menos — 97% escolhem a super oferta!</p>
         </div>
       </div>
